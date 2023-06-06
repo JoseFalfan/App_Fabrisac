@@ -16,11 +16,11 @@
   <form>
     <ion-item lines="full">
       <ion-label position="floating">Usuario</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" [(ngModel)]="user" [ngModelOptions]="{standalone: true}"></ion-input>
     </ion-item>
     <ion-item lines="full">
       <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"></ion-input>
     </ion-item>
     <ion-row>
       <ion-col class="ion-align-self-center">
